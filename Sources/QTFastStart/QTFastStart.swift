@@ -11,7 +11,7 @@ import Foundation
 /// return optimized data if success.
 /// return original data if failure.
 
-public class QTFastStart {
+open class QTFastStart {
 
     private var FREE_ATOM: Int { fourCcToInt("free") }
     private var JUNK_ATOM: Int { fourCcToInt("junk") }
@@ -29,6 +29,8 @@ public class QTFastStart {
     private var CO64_ATOM: Int { fourCcToInt("c064") }
     
     private let ATOM_PREAMBLE_SIZE: Int = 8
+    
+    public init() {}
     
     private func fourCcToInt(_ fourCc: String) -> Int {
         let data = fourCc.data(using: .ascii)!
