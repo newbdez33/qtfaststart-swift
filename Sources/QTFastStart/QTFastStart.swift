@@ -11,7 +11,7 @@ import Foundation
 /// return optimized data if success.
 /// return original data if failure.
 
-class QTFastStart {
+public class QTFastStart {
 
     private var FREE_ATOM: Int { fourCcToInt("free") }
     private var JUNK_ATOM: Int { fourCcToInt("junk") }
