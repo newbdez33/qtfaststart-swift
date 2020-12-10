@@ -48,7 +48,7 @@ public class QTFastStart {
         
     }
     
-    func process(_ data: Data) -> Data {
+    public func process(_ data: Data) -> Data {
         var dataBytes = ByteBuffer(data: data)
         var atomBytes = ByteBuffer(size: ATOM_PREAMBLE_SIZE)
         var atomType: Int = 0
